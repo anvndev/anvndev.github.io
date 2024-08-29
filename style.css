@@ -181,6 +181,12 @@ span {
 .social-container button.youtube {
     background: linear-gradient(45deg, #fe294988, #f10000);
 }
+.social-container button.tiktok {
+    background: linear-gradient(45deg, #830e1f88, #380404);
+}
+.social-container button.reddit {
+    background: linear-gradient(45deg, #fe902988, #FF4500);
+}
 .social-container button.search {
     background: linear-gradient(45deg, #4ae03d88, #07ff24);
 }
