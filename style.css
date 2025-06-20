@@ -31,7 +31,7 @@ body {
 
 .profile-container {
   position: relative;
-  max-width: 550px;
+  max-width: 590px;
   padding: 100px 50px 40px;
   border-radius: 22px;
   background: rgba(255, 255, 255, 0.3);
@@ -229,4 +229,12 @@ span {
 }
 .search {
   background: linear-gradient(45deg, #4ae03d88, #07ff24);
+}
+
+.blog {
+  background: linear-gradient(
+    45deg,
+    rgba(18, 229, 53, 0.73),
+    rgb(15, 175, 157)
+  );
 }
