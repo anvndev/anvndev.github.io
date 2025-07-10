@@ -42,22 +42,6 @@ body {
   text-align: center;
 }
 
-/* .profile-container::before {
-  content: "";
-  position: absolute;
-  left: -59%;
-  width: 80px;
-  height: 100%;
-  background-color: #fffb;
-  transform: rotate(38deg) translateY(-25%);
-  z-index: 1;
-  overflow: hidden;
-}
-
-.profile-container:hover::before {
-  animation: brightness 0.8s forwards;
-} */
-
 .action.contme {
   position: relative;
   overflow: hidden;
@@ -237,4 +221,154 @@ span {
     rgba(18, 229, 53, 0.73),
     rgb(15, 175, 157)
   );
+}
+
+/* Pixel font import */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* Introduction Modal Styles */
+#intro-modal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(30, 30, 40, 0.35);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: intro-fade-in 0.4s;
+  backdrop-filter: blur(6px);
+}
+
+/* Terminal Top Bar and Dots */
+.intro-modal-content {
+  background: rgba(35, 39, 46, 0.92);
+  border: 2.5px solid #222;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37), 0 0 0 6px #222;
+  padding: 2.5rem 2rem 2rem 2rem;
+  min-width: 340px;
+  max-width: 90vw;
+  font-family: 'Press Start 2P', 'Montserrat', monospace;
+  color: #e0e0e0;
+  text-align: left;
+  position: relative;
+  transform: translateY(-30px);
+  opacity: 1;
+  animation: intro-slide-in 0.5s forwards;
+}
+
+.intro-modal-topbar {
+  display: flex;
+  align-items: center;
+  height: 22px;
+  background: #181a20;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  margin: -2.5rem -2rem 1.2rem -2rem;
+  padding: 0 1.1rem;
+  gap: 0.5rem;
+}
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 4px;
+}
+.dot-red {
+  background: #ff5f56;
+  border: 1.5px solid #e0443e;
+  cursor: pointer;
+  transition: box-shadow 0.2s, background 0.2s;
+}
+.dot-red:hover {
+  box-shadow: 0 0 0 3px #ff5f5644;
+  background: #ff2d1a;
+}
+
+.slow-life-dot {
+  color: #00ff5a;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  margin: 1.2em auto 0.7em auto;
+  opacity: 0.88;
+  text-shadow: 0 0 12px #00ff5a, 0 0 2px #00ff5a;
+  font-family: 'Press Start 2P', monospace;
+}
+
+.slow-life-dot::before {
+  content: '"';
+  color: #00ff5a;
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-right: 0.2em;
+}
+.slow-life-dot::after {
+  content: '"';
+  color: #00ff5a;
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-left: 0.2em;
+}
+
+.slow-life-dot.special {
+  color: #ff00cc;
+  text-shadow: 0 0 18px #ff00cc, 0 0 8px #fff700, 0 0 2px #ff00cc;
+  font-size: 3rem;
+  font-weight: 900;
+  opacity: 1;
+  animation: slowlife-glow 1.2s infinite alternate;
+}
+
+@keyframes slowlife-glow {
+  from { text-shadow: 0 0 8px #ff00cc, 0 0 2px #fff700; }
+  to { text-shadow: 0 0 24px #fff700, 0 0 12px #ff00cc; }
+}
+
+.dot-yellow { background: #ffbd2e; border: 1.5px solid #dea123; }
+.dot-green { background: #27c93f; border: 1.5px solid #13a10e; }
+
+@keyframes intro-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes intro-slide-in {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.intro-modal-text h2 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+  color: #bada55;
+}
+
+.intro-modal-text p {
+  font-size: 0.85rem;
+  margin: 0.7rem 0;
+  line-height: 1.6;
+  word-break: break-word;
+  color: #e0e0e0;
+}
+
+#intro-random {
+  font-style: italic;
+  font-weight: bold;
+}
+
+@media (max-width: 500px) {
+  .intro-modal-content {
+    min-width: 90vw;
+    padding: 1.2rem 0.5rem 1.5rem 0.5rem;
+  }
+  .intro-modal-text h2 {
+    font-size: 0.8rem;
+  }
+  .intro-modal-text p {
+    font-size: 0.7rem;
+  }
 }

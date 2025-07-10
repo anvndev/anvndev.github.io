@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="google-site-verification" content="cWbhdG4NRP_37KwZKoDj6IVvU0JeH8gS6Dps0OgIF4Y" />
@@ -11,6 +12,7 @@
   <link rel="stylesheet" href="./style.css" />
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
+
 <body>
   <div class="profile-container">
     <div class="img-container">
@@ -18,29 +20,50 @@
     </div>
 
     <h1>I'm a <span id="elem"></span></h1>
-    
-        <div class="content-info">
-        <p><strong>Hello, I'm An Van Nguyen!</strong></p>
-        <p class="sub-info">Here is my contact information.</p>
-        </div>
+
+    <div class="content-info">
+      <p><strong>Hello, I'm An Van Nguyen!</strong></p>
+      <p class="sub-info">Here is my contact information.</p>
+    </div>
 
 
-    <a href="https://anvndev.github.io/" class="action contme">Contact Me</a>
+    <a href="https://anvndev.github.io/" class="action contme">Explore</a>
 
     <div class="social-container">
-      <a href="https://www.facebook.com/anvndev/" class="social-button facebook fab fa-facebook" aria-label="Facebook"></a>
-      <a href="https://www.linkedin.com/in/anvndev/" class="social-button linkedin fab fa-linkedin" aria-label="LinkedIn"></a>
-      <a href="https://www.instagram.com/anvndev/" class="social-button instagram fab fa-instagram" aria-label="Instagram"></a>
+      <a href="https://www.facebook.com/anvndev/" class="social-button facebook fab fa-facebook"
+        aria-label="Facebook"></a>
+      <a href="https://www.linkedin.com/in/anvndev/" class="social-button linkedin fab fa-linkedin"
+        aria-label="LinkedIn"></a>
+      <a href="https://www.instagram.com/anvndev/" class="social-button instagram fab fa-instagram"
+        aria-label="Instagram"></a>
       <a href="https://github.com/anvndev" class="social-button github fab fa-github" aria-label="GitHub"></a>
       <a href="https://x.com/anvndev" class="social-button twitter fab fa-twitter" aria-label="Twitter"></a>
       <a href="https://www.youtube.com/@anvndev" class="social-button youtube fab fa-youtube" aria-label="YouTube"></a>
       <a href="https://www.tiktok.com/@anvndev" class="social-button tiktok fab fa-tiktok" aria-label="TikTok"></a>
-      <a href="https://anvndev.github.io/initdotbug/" class="social-button blog fab fa-linux" aria-label="Website"></a>
+      <a href="https://andev0x.github.io/" class="social-button blog fab fa-linux" aria-label="Website"></a>
       <a href="https://www.reddit.com/user/anvndev/" class="social-button reddit fab fa-reddit" aria-label="Reddit"></a>
-      <a href="https://anvndev.github.io/psyofme/" class="social-button search fab fa-searchengin" aria-label="Website"></a>
+      <a href="https://anvndev.github.io/psyofme/" class="social-button search fab fa-searchengin"
+        aria-label="Website"></a>
+    </div>
+  </div>
+
+  <!-- Introduction Modal -->
+  <div id="intro-modal" class="intro-modal" style="display:none;">
+    <div class="intro-modal-content">
+      <div class="intro-modal-topbar">
+        <span class="dot dot-red" id="intro-modal-close"></span>
+        <span class="dot dot-yellow"></span>
+        <span class="dot dot-green"></span>
+      </div>
+      <div class="intro-modal-text">
+        <h2 id="intro-title">anvndev</h2>
+        <p id="intro-desc">More</p>
+        <p id="intro-random"></p>
+      </div>
     </div>
   </div>
 
   <script src="text.js"></script>
 </body>
+
 </html>
